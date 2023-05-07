@@ -6,3 +6,9 @@ function getComputerChoice () {
 }
 
 console.log(getComputerChoice());
+
+function formatPlayerInput (string) {
+    let firstLetterCap = string[0].toUpperCase();
+    let restOfString = string.slice(1).toLowerCase();
+    return firstLetterCap + restOfString;
+}
